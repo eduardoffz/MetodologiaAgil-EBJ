@@ -1,0 +1,10 @@
+com\senai\patrimonio\dto\ContagemPorDepartamentoDTO.class
+com\senai\patrimonio\repository\EquipamentoRepository.class
+com\senai\patrimonio\controller\EquipamentoController.class
+com\senai\patrimonio\repository\DepartamentoRepository.class
+com\senai\patrimonio\service\EquipamentoService.class
+com\senai\patrimonio\model\Departamento.class
+com\senai\patrimonio\PatrimonioApplication.class
+com\senai\patrimonio\dto\EquipamentoResponseDTO.class
+com\senai\patrimonio\model\Equipamento.class
+com\senai\patrimonio\repository\ConexaoDB.class
