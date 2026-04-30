@@ -1,0 +1,7 @@
+com\agil\atividadegrupo\model\DepartamentoDTO.class
+com\agil\atividadegrupo\service\EquipamentoService.class
+com\agil\atividadegrupo\repository\EquipamentoDAO.class
+com\agil\atividadegrupo\controller\EquipamentoAPIController.class
+com\agil\atividadegrupo\AtividadegrupoApplication.class
+com\agil\atividadegrupo\model\EquipamentoDTO.class
+com\agil\atividadegrupo\repository\Conexao.class
