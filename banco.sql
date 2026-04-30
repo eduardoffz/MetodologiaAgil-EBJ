@@ -1,20 +1,16 @@
 -- ============================================================
 -- SCRIPT SQL - Sistema de Patrimônio SENAI
--- Execute este script no MySQL antes de rodar o projeto.
--- ============================================================
 
--- 1. Criar e selecionar o banco
+
 CREATE DATABASE IF NOT EXISTS patrimonio_senai;
 USE patrimonio_senai;
 
--- 2. Tabela de Departamentos
 CREATE TABLE IF NOT EXISTS departamento (
     id    INT PRIMARY KEY AUTO_INCREMENT,
     nome  VARCHAR(100) NOT NULL,
     andar INT NOT NULL
 );
 
--- 3. Tabela de Equipamentos (com FK para departamento)
 CREATE TABLE IF NOT EXISTS equipamento (
     id                 INT PRIMARY KEY AUTO_INCREMENT,
     codigo_patrimonio  VARCHAR(50) NOT NULL UNIQUE,
