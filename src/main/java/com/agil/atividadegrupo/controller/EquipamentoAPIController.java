@@ -21,14 +21,14 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api/equipamentos")
 public class EquipamentoAPIController {
     @Autowired
-    private EquipamentoService funcionarioService;
+    private EquipamentoService EquipamentoService;
 
     @GetMapping
     public List<EquipamentoDTO> listarTodos() {
-        return funcionarioService.lerTodos();
+        return EquipamentoService.lerTodos();
     }
     @GetMapping("/departamento")
     public List<DepartamentoDTO> lerDepartamento(){
-        return funcionarioService.lerDepartamento();
+        return EquipamentoService.lerDepartamento();
     }
 }
