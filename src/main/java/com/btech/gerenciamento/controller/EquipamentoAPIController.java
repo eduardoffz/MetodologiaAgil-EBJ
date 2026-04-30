@@ -5,6 +5,7 @@
 package com.btech.gerenciamento.controller;
 
 import com.btech.gerenciamento.model.EquipamentoDTO;
+import com.btech.gerenciamento.model.DepartamentoDTO;
 import com.btech.gerenciamento.service.EquipamentoService;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -35,6 +36,13 @@ public class EquipamentoAPIController {
        return "Equipamento atualizado com sucesso!"; 
     }
     //fim ex3
+    @GetMapping
+    public List<EquipamentoDTO> listarTodos() {
+        return equipamentoService.lerTodos();
+    }
     
- 
+    @GetMapping("/departamento")
+    public List<DepartamentoDTO> lerDepartamento(){
+        return equipamentoService.lerDepartamento();
+    }
 }

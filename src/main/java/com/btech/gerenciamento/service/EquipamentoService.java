@@ -4,8 +4,10 @@
  */
 package com.btech.gerenciamento.service;
 
+import com.btech.gerenciamento.model.DepartamentoDTO;
 import com.btech.gerenciamento.model.EquipamentoDTO;
 import com.btech.gerenciamento.repository.EquipamentoDAO;
+import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -25,6 +27,15 @@ public class EquipamentoService {
         repository.editar(equipamento);
     }
      //fim ex3
+    
+    
+    public List<EquipamentoDTO> lerTodos() {
+        return repository.lerTodos();
+    }
+    
+    public List<DepartamentoDTO> lerDepartamento(){
+        return repository.lerDepartamento();
+    }
     
     
 }
