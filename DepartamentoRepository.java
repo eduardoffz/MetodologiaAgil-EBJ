@@ -3,21 +3,10 @@ package com.senai.patrimonio.repository;
 import com.senai.patrimonio.model.Departamento;
 import java.sql.*;
 
-/**
- * REPOSITORY - DepartamentoRepository
- *
- * Responsável por acessar a tabela 'departamento' no banco.
- * Usado principalmente para validar se um departamento existe (Exercício 1).
- */
+
 public class DepartamentoRepository {
 
-    /**
-     * Busca um departamento pelo ID.
-     * Exercício 1 - Regra de Negócio: verificar se idDepartamento existe.
-     *
-     * @param id ID do departamento
-     * @return Departamento encontrado, ou null se não existir
-     */
+  
     public Departamento buscarPorId(int id) {
         String sql = "SELECT id, nome, andar FROM departamento WHERE id = ?";
 
