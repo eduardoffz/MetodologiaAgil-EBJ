@@ -1,0 +1,6 @@
+com\btech\gerenciamento\controller\FuncionarioController.class
+com\btech\gerenciamento\service\FuncionarioService.class
+com\btech\gerenciamento\repository\Conexao.class
+com\btech\gerenciamento\GerenciamentoApplication.class
+com\btech\gerenciamento\repository\FuncionarioDAO.class
+com\btech\gerenciamento\model\FuncionarioBean.class
